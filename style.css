@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --grad: linear-gradient(90deg, rgba(87, 39, 145, 1) 0%, rgba(181, 95, 168, 1) 100%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--grad);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content {
+  width: 40%;
+  background: white;
+  padding: 50px 100px;
+  border-radius: 5px;
+}
+
+#content > h1:first-child {
+  font-size: 3em;
+  font-weight: 400;
+  color: #721872;
+  margin-bottom: 20px;
+}
+
+#content > h1 + p {
+  color: rgba(100, 100, 100, 0.5);
+  font-size: 1.2em;
+}
+
+#content > form {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+
+.inp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #721872;
+}
+
+.inp > input {
+  font-size: 1.2em;
+  width: 100%;
+  border: none;
+  padding: 10px;
+}
+
+.inp > input::placeholder {
+  color: rgba(100, 100, 100, 0.5);
+}
+
+.inp > input:focus {
+  outline: none;
+}
+
+#options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#remember-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#remember-label > input {
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+
+#options > a {
+  text-decoration: none;
+}
+
+#content > form > button {
+  border: none;
+  width: 100%;
+  border-radius: 40px;
+  color: white;
+  font-size: 2em;
+  padding: 20px;
+  background: var(--grad);
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+#alternate {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#alternate > p {
+  margin: 0;
+}
+
+#alternate > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #721872;
+}
